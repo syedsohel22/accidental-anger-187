@@ -6,6 +6,7 @@ import SearchResultPage from "../Pages/SearchResultPage";
 import SingleHotelPage from "../Pages/SingleHotelPage";
 import Home from "../Pages/Home";
 import Pagenotfound from "../Pages/Pagenotfound";
+import TestPage from "../Pages/TestPage";
 export const AllRoutes = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ export const AllRoutes = () => {
         <Route path="/register" element={<Register />}></Route>
         <Route path="/Serchresult" element={<SearchResultPage />}></Route>
         <Route path="*" element={<Pagenotfound />}></Route>
+        <Route path="/testpage" element={<TestPage />}></Route>
         <Route path="/Singlehotelpage/:" element={<SingleHotelPage />}></Route>
       </Routes>
     </div>

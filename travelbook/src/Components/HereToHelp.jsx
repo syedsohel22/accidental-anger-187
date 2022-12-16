@@ -14,7 +14,7 @@ const HereToHelp = () => {
         justifyContent="space-between"
         align="center"
       >
-        <Box border="1px" borderColor="gray.800">
+        <Box border="1px" borderColor="gray.800" bgColor="#fff">
           Change or cancel a trip
         </Box>
         <Box border="1px" borderColor="gray.800">

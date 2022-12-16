@@ -11,6 +11,7 @@ const ThreeCard = () => {
         justify-content="space-between"
         m="auto"
         cursor="pointer"
+        gap="20px"
       >
         <Box>
           <Image

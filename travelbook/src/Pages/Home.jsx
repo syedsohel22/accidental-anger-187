@@ -7,9 +7,11 @@ import ThreeCard from "../Components/ThreeCard";
 import TodaysTopDeal from "../Components/TodaysTopDeal";
 import HereToHelp from "../Components/HereToHelp";
 import TravlingAdvaice from "../Components/TravlingAdvaice";
+import "../css/homePage.css";
+
 const Home = () => {
   return (
-    <div>
+    <div className="home-page">
       <Navbar />
       <SerachComponent />
       <ThreeCard />
