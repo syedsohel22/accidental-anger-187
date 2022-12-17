@@ -1,9 +1,15 @@
-import React from 'react'
-
+import React from "react";
+import HotelCard from "../Components/HotelCard";
+//get query
+//fetch call and get data
+//map it to component
+//style the component
 const SearchResultPage = () => {
   return (
-    <div>SearchResultPage</div>
-  )
-}
+    <div>
+      <HotelCard />
+    </div>
+  );
+};
 
-export default SearchResultPage
+export default SearchResultPage;
