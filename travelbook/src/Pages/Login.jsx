@@ -31,8 +31,6 @@ export default function Login() {
     });
   };
   const handleSubmit = async (e) => {
-    //  setFlag(true);
-    //  e.preventDefault();
     const url = `https://reqres.in/api/login`;
     try {
       let res = await fetch(url, {

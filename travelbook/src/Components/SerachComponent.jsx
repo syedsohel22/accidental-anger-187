@@ -12,15 +12,21 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 
-const initstate = {
-  city: "",
-  checkIn: "",
-  checkOut: "",
-  guest: 0,
-  child: 0,
-};
 const SerachComponent = () => {
-  const [searchData, setSearchData] = useState(initstate);
+  const [searchData, setSearchData] = useState({
+    city: "",
+    checkIn: "",
+    checkOut: "",
+    guest: 0,
+  });
+
+  const handleChange = (e) => {
+    setSearchData({
+      ...searchData,
+      [e.target.name]: e.target.value,
+    });
+  };
+  console.log(searchData);
   return (
     <div>
       <Box
@@ -30,15 +36,24 @@ const SerachComponent = () => {
         w="100%"
         h="380px"
         // bgSize="100%"
-        position="relative"
-        zIndex="4"
+        position="absolute"
+        //zIndex="4"
       >
         <Image
           src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=225&q=mediumHigh"
           alt="background-img"
           width="100%"
         />
-        <Box w="70%" bg="white" p="10px" m="auto">
+        <Box
+          w="80%"
+          h="70%"
+          bg="white"
+          p="10px"
+          m="auto"
+          position="relative"
+          top="-320px"
+          bottom="100px"
+        >
           {/* tab-menus */}
           <Tabs>
             <TabList>
@@ -67,10 +82,12 @@ const SerachComponent = () => {
                     placeholder="Going to "
                     size="md"
                     w="80%"
-                    name="city"
                     align={"center"}
                     justify={"center"}
-                    value={"e.target.value"}
+                    type="text"
+                    name="city"
+                    value={searchData.city}
+                    onChange={handleChange}
                   />
                   <Input
                     placeholder="Select Check-in Date"
@@ -79,14 +96,20 @@ const SerachComponent = () => {
                     w="80%"
                     align={"center"}
                     justify={"center"}
+                    name="checkIn"
+                    value={searchData.checkIn}
+                    onChange={handleChange}
                   />
                   <Input
                     placeholder="Select Check-out Date"
                     size="md"
                     type="date"
                     w="80%"
+                    name="checkOut"
                     align={"center"}
                     justify={"center"}
+                    value={searchData.checkOut}
+                    onChange={handleChange}
                   />
                   <Input
                     placeholder="Travlears"
@@ -95,6 +118,9 @@ const SerachComponent = () => {
                     w="80%"
                     align={"center"}
                     justify={"center"}
+                    name="guest"
+                    value={searchData.guest}
+                    onChange={handleChange}
                   />
                 </Box>
               </TabPanel>
@@ -122,6 +148,7 @@ const SerachComponent = () => {
               width="200px"
               color="#fff"
               bgColor="#c83269"
+              // onClick={}
             >
               Search
             </Button>

@@ -12,6 +12,7 @@ const ThreeCard = () => {
         m="auto"
         cursor="pointer"
         gap="20px"
+        mt="450px"
       >
         <Box>
           <Image
