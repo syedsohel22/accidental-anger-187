@@ -23,22 +23,32 @@ const Navbar = () => {
           alignItems="center"
         >
           <Box>
-            <Image
-              src="https://drive.google.com/uc?export=view&id=1LKrXNSqB-UFo-fiwbfcX_nKtUmy9hMFf"
-              alt="logo"
-              w="150px"
-            />
+            <RouterLink to="/">
+              <Image
+                src="https://wondrous-semolina-9847dc.netlify.app/img/main-logo.png"
+                alt="logo"
+                w="150px"
+                bgColor="#00253c"
+              />
+            </RouterLink>
           </Box>
           <Box>MENU</Box>
         </Box>
         <Box display="flex" justify-content="space-around" gap="25px">
-          <Box _hover={{ color: "grey" }} cursor="pointer">
+          <Box _hover={{ color: "#00b1ff" }} cursor="pointer">
             List Your Property
           </Box>
-          <Box>Support</Box>
-          <Box>Trips</Box>
+          <Box _hover={{ color: "#00b1ff" }} cursor="pointer">
+            {" "}
+            Support
+          </Box>
+          <Box _hover={{ color: "#00b1ff" }} cursor="pointer">
+            Trips
+          </Box>
           <RouterLink to="/login">
-            <Box>Login</Box>
+            <Box _hover={{ color: "#00b1ff" }} cursor="pointer">
+              Login
+            </Box>
           </RouterLink>
         </Box>
       </Box>

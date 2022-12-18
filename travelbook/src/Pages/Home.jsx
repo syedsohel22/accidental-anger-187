@@ -16,7 +16,7 @@ const Home = () => {
       <ThreeCard />
       <FeaturedOffers />
       <TodaysTopDeal />
-      <HereToHelp />
+
       <TravlingAdvaice />
     </div>
   );

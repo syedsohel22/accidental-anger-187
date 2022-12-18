@@ -150,7 +150,7 @@ const SerachComponent = () => {
                 width="200px"
                 color="#fff"
                 bgColor="#c83269"
-                // onClick={}
+                _hover={{ bgcolor: "#00253c" }}
               >
                 Search
               </Button>
