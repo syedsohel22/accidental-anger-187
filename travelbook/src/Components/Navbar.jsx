@@ -24,7 +24,7 @@ const Navbar = () => {
         >
           <Box>
             <Image
-              src="https://drive.google.com/uc?export=view&id=1xtXdoYJwNfixQE-ZapZrUUY4Ym9ZVToJ"
+              src="https://drive.google.com/uc?export=view&id=1LKrXNSqB-UFo-fiwbfcX_nKtUmy9hMFf"
               alt="logo"
               w="150px"
             />
@@ -32,7 +32,9 @@ const Navbar = () => {
           <Box>MENU</Box>
         </Box>
         <Box display="flex" justify-content="space-around" gap="25px">
-          <Box>List Your Property</Box>
+          <Box _hover={{ color: "grey" }} cursor="pointer">
+            List Your Property
+          </Box>
           <Box>Support</Box>
           <Box>Trips</Box>
           <RouterLink to="/login">

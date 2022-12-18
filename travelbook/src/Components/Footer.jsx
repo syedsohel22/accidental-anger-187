@@ -112,7 +112,7 @@ export default function Footer() {
           <Logo />
         </Flex>
         <Text pt={6} fontSize={"sm"} textAlign={"center"}>
-          © 2022 Chakra Templates. All rights reserved
+          © 2022 TravelBook. All rights reserved
         </Text>
       </Box>
     </Box>

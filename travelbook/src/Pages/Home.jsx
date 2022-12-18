@@ -12,14 +12,12 @@ import "../css/homePage.css";
 const Home = () => {
   return (
     <div className="home-page">
-      <Navbar />
       <SerachComponent />
       <ThreeCard />
       <FeaturedOffers />
       <TodaysTopDeal />
       <HereToHelp />
       <TravlingAdvaice />
-      <Footer />
     </div>
   );
 };

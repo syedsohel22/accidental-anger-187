@@ -1,4 +1,5 @@
 import React from "react";
+import { Link as RouterLink } from "react-router-dom";
 import {
   Box,
   Input,
@@ -17,7 +18,7 @@ const SerachComponent = () => {
     city: "",
     checkIn: "",
     checkOut: "",
-    guest: 0,
+    guest: 1,
   });
 
   const handleChange = (e) => {
@@ -27,12 +28,12 @@ const SerachComponent = () => {
     });
   };
   console.log(searchData);
+  localStorage.setItem("searchData", JSON.stringify(searchData));
   return (
     <div>
       <Box
-        // bgImage="url('https://forever.travel-assets.com/flex/flexmanager/images/2021/11/01/ORB_Storefront_6_imgB_1400x600_20211028.jpg?impolicy=fcrop&w=900&h=225&q=mediumHigh')"
-        // bgPosition="center"
-        // bgRepeat="no-repeat"
+        top="0"
+        mt="80px"
         w="100%"
         h="380px"
         // bgSize="100%"
@@ -142,16 +143,18 @@ const SerachComponent = () => {
             </TabPanels>
           </Tabs>
           <Box textAlign="center">
-            <Button
-              size="md"
-              height="48px"
-              width="200px"
-              color="#fff"
-              bgColor="#c83269"
-              // onClick={}
-            >
-              Search
-            </Button>
+            <RouterLink to="/searchresult">
+              <Button
+                size="md"
+                height="48px"
+                width="200px"
+                color="#fff"
+                bgColor="#c83269"
+                // onClick={}
+              >
+                Search
+              </Button>
+            </RouterLink>
           </Box>
         </Box>
       </Box>
