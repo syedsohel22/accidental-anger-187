@@ -8,6 +8,7 @@ import {
   Flex,
   Tag,
   useColorModeValue,
+  Image,
 } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
@@ -109,10 +110,16 @@ export default function Footer() {
             ml: 8,
           }}
         >
-          <Logo />
+          {/* <Logo /> */}
+          <Image
+            src="https://wondrous-semolina-9847dc.netlify.app/img/main-logo.png"
+            alt="logo"
+            w="150px"
+            bg=""
+          />
         </Flex>
         <Text pt={6} fontSize={"sm"} textAlign={"center"}>
-          © 2022 Chakra Templates. All rights reserved
+          © 2022 TravelBook. All rights reserved
         </Text>
       </Box>
     </Box>

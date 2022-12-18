@@ -7,6 +7,7 @@ import SingleHotelPage from "../Pages/SingleHotelPage";
 import Home from "../Pages/Home";
 import Pagenotfound from "../Pages/Pagenotfound";
 import TestPage from "../Pages/TestPage";
+import Payment from "../Pages/Payment";
 export const AllRoutes = () => {
   return (
     <div>
@@ -14,10 +15,12 @@ export const AllRoutes = () => {
         <Route path="/" element={<Home />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
-        <Route path="/Serchresult" element={<SearchResultPage />}></Route>
+        <Route path="/searchresult" element={<SearchResultPage />}></Route>
         <Route path="*" element={<Pagenotfound />}></Route>
         <Route path="/test" element={<TestPage />}></Route>
-        <Route path="/Singlehotelpage/:" element={<SingleHotelPage />}></Route>
+        <Route path="/payment" element={<Payment />}></Route>
+        <Route path="/singlehotelpage" element={<SingleHotelPage />}></Route>
+        <Route path="/singlehotelpage/:" element={<SingleHotelPage />}></Route>
       </Routes>
     </div>
   );
