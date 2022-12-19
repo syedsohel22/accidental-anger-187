@@ -4,9 +4,11 @@ import { SimpleGrid, Box, Image, Heading, Text, Badge } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 
 const HotelCard = (props) => {
-  localStorage.setItem("selected-hotel", JSON.stringify(props));
   const { name, city, price, type, rating, review, strikeprice, image } = props;
-  const storelocal = (el) => {};
+
+  const storelocal = (el) => {
+    localStorage.setItem("selected-hotel", JSON.stringify(props));
+  };
   return (
     <div
       onClick={(e) => {
