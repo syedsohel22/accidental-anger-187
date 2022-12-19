@@ -34,8 +34,10 @@ const SingleHotelPage = () => {
     <div>
       <Container>
         {data.map((el) => (
+        
           <Stack direction="column">
             <Box>
+           
               <RouterLink to="/searchresult">
                 <Text p="10px">
                   <ArrowBackIcon />
@@ -69,7 +71,7 @@ const SingleHotelPage = () => {
                     </Button>
                   </RouterLink>
                   <Heading as="h4" size="md" p="10px">
-                    ₹{el.price}
+                    ₹{el.price + 280}
                   </Heading>
                 </Flex>
                 <TabPanels>
