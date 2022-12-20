@@ -1,7 +1,13 @@
-RCT-101 Masai Construct Week Project.
+## RCT-101 Masai Construct Week Project.
 
-Project Code - accidental-anger-187
-Project Name - Travel Book
-Inspired from - https://www.orbitz.com/
-Developed By - Sohel Syed
-Student Code -fp06_059
+ - Project Code - accidental-anger-187
+ - Project Name - Travel Book
+ - Inspired from - https://www.orbitz.com/
+ - Developed By - Sohel Syed
+ - Student Code -fp06_059
+
+# Tech Stack
+- React
+- Chakra UI
+- JSON-server
+- CSS
